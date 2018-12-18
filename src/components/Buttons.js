@@ -5,18 +5,21 @@ class Buttons extends Component {
     render() {
         return (
             <div className="container">
-                {
-                    this.props.buttons.map((button, i) => {
-                        return (
-                            <button
-                                key={i}
-                                className="btn btn-primary"
-                                onClick={() => { this.props.handleClick(button) }}>
-                                {button}
-                            </button>
-                        );
-                    })
-                }
+                <div className="row">
+                    {
+                        this.props.buttons.map((button, i) => {
+                            return (
+                                
+                                <button
+                                    key={i}
+                                    className="btn btn-primary"
+                                    onClick={() => { this.props.handleClick(button) }}>
+                                    {button}
+                                </button>
+                            );
+                        })
+                    }
+                </div>
             </div>
         );
     }
