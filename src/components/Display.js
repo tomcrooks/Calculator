@@ -6,7 +6,7 @@ class Display extends Component {
             <div className="container">
                 <div className="row">
                     <input className="col-md-9" type="text" name="expression" value={this.props.calcExpression} readOnly />
-                    <input className="col-md-3" type="text" name="calcResult" value={this.props.calcResult} readOnly />
+                    <input className="col-md-3 text-right" type="text" name="calcResult" value={this.props.calcResult} readOnly />
                 </div>
             </div>
         )
