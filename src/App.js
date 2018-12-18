@@ -39,11 +39,13 @@ class App extends Component {
 
 		return (
 			<div className="container">
-				<div className="small container">
+				<div className="container">
 					<h1>React Calculator</h1>
 				</div>
 				<Display calcResult={calcResult} calcExpression={expression} />
-				<Buttons buttons={buttons} handleClick={ this.handleClick } />
+				<div className="text-center">
+					<Buttons buttons={buttons} handleClick={ this.handleClick } />
+				</div>
 			</div>
 		)
 	}
