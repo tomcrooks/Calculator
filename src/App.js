@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
-import Display from './Display';
-import Buttons from './Buttons';
+import Display from './components/Display';
+import Buttons from './components/Buttons';
 
 class App extends Component {
 	state = {
@@ -11,7 +11,7 @@ class App extends Component {
 	};
 
 	handleClick = value => {
-		this.setState({	
+		this.setState({
 			expression: this.state.expression + value
 		});
 
